@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\labs\\FeatureToogle\\FeatureToogle.csproj": {}
+    "D:\\labs\\FeatureToogle\\FeatureToogle.csproj": {}
   },
   "projects": {
-    "d:\\labs\\FeatureToogle\\FeatureToogle.csproj": {
+    "D:\\labs\\FeatureToogle\\FeatureToogle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\labs\\FeatureToogle\\FeatureToogle.csproj",
+        "projectUniqueName": "D:\\labs\\FeatureToogle\\FeatureToogle.csproj",
         "projectName": "FeatureToogle",
-        "projectPath": "d:\\labs\\FeatureToogle\\FeatureToogle.csproj",
+        "projectPath": "D:\\labs\\FeatureToogle\\FeatureToogle.csproj",
         "packagesPath": "C:\\Users\\eduag\\.nuget\\packages\\",
-        "outputPath": "d:\\labs\\FeatureToogle\\obj\\",
+        "outputPath": "D:\\labs\\FeatureToogle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

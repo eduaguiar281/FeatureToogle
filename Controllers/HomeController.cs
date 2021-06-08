@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FeatureToogle.Models;
 using Microsoft.FeatureManagement.Mvc;
+using Microsoft.FeatureManagement;
 
 namespace FeatureToogle.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IFeatureManager _featureManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IFeatureManager featureManager)
         {
             _logger = logger;
+            _featureManager = featureManager;
         }
 
         public IActionResult Index()
@@ -27,6 +30,15 @@ namespace FeatureToogle.Controllers
         [FeatureGate("PrivacyFeature")]
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public async Task<IActionResult> FeatureMessage()
+        {
+            if (await _featureManager.IsEnabledAsync("FeatureMessage"))
+                ViewData["Mensagem"] = "Feature Ativada!";
+            else
+                ViewData["Mensagem"] = "Feature Desativada!";
             return View();
         }
 

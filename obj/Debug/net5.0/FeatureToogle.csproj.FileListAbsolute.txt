@@ -41,3 +41,4 @@ D:\labs\FeatureToogle\obj\Debug\net5.0\FeatureToogle.csproj.CopyComplete
 D:\labs\FeatureToogle\bin\Debug\net5.0\Microsoft.FeatureManagement.dll
 D:\labs\FeatureToogle\bin\Debug\net5.0\Microsoft.FeatureManagement.AspNetCore.dll
 D:\labs\FeatureToogle\obj\Debug\net5.0\FeatureToogle.MvcApplicationPartsAssemblyInfo.cs
+D:\labs\FeatureToogle\obj\Debug\net5.0\Razor\Views\Home\FeatureMessage.cshtml.g.cs
